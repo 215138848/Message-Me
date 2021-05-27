@@ -1,0 +1,53 @@
+
+
+#side-menu {
+
+	position: fixed;
+	height: 100%;
+	min-height: 500px;
+	width:20%;
+	float: left;
+
+  	background: rgb(4, 156, 207);
+  	border-radius: 10px;
+	text-align: center;
+}
+
+#main-body {
+	width:59%; 
+	height: 100%;
+	float: left;
+	padding-left: 20.5%;
+	padding-right: 0.5%;
+
+	background: rgb(104, 102, 102);	
+}
+
+#right-side {
+	float: right;
+	height: 1000px;
+	width:20%;
+
+	background: rgb(58, 148, 36);
+	border-radius: 7px;
+	text-align: center;
+}
+
+.button{
+    margin-top: 100px; /*The height of the   header*/
+	display:flex;
+	direction: vertical;
+	padding-left: 15px;
+	padding-top: 5px;
+	text-align: center;
+	float: right;
+}
+
+.img {
+	background-color: rgb(26, 99, 182);
+}
+
+.right-panel{
+	
+	position: fixed;
+}

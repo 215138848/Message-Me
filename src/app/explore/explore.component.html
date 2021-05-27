@@ -1,0 +1,39 @@
+
+<div id="ContentBox">
+      
+    <main> 
+        <h1>Explore </h1>
+    </main>
+
+    <section>
+      <h2>Explorer the content</h2>
+
+      
+      <h3>colours</h3>
+        <table>
+            <tr *ngFor="let colour of colours"> {{colour}}  </tr>
+        </table>
+        <div>
+      <p>reply</p>
+      <input type="text" id="replyField" #newMessage1  maxlength="140" >
+      <button id="PostButton"  (click)="postMessage1(newMessage1.value)" > post </button>
+      </div>
+      <h3>planets</h3>
+
+      <table>
+        <tr *ngFor="let planet of planets"> {{planet}}  </tr>
+        </table>
+      
+      <p>reply</p>
+      <input type="text" id="replyField" #newMessage2  maxlength="140" >
+      <button id="PostButton"  (click)="postMessage2(newMessage2.value)"> post </button>
+
+    </section>
+
+    <footer> 
+        <p>Footer </p>
+        <p>is working</p>
+    </footer>
+
+  </div>       <!-- ContentBox -->
+

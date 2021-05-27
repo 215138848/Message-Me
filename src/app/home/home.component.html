@@ -1,0 +1,56 @@
+
+    <header> 
+        <h1>Message Me</h1>
+        <h3>A premium messenger service provided for free</h3>
+    </header>
+
+<div id="ContentBox">
+      
+    <main> 
+      <h1>Home</h1>
+    
+      <textarea type="text" id="messageField" #newPost placeholder="Whats on Your Mind?" maxlength="140" ></textarea>
+      <button id="PostButton" (click)="postMessage(newPost.value)"> post </button>
+ 
+    </main>
+
+    <section>
+      <h3>My Messages</h3>
+        <table id="messageTable">
+            <tr *ngFor="let message of messages"> {{message}}  </tr>
+        </table>
+        <div>
+      <p>reply</p>
+      <input type="text" id="replyField" #newMessageReply  maxlength="140" >
+      <button id="PostButton" (click)="postMessageReply(newMessageReply.value)"> post </button>
+      </div>
+
+      <h3>colours</h3>
+        <table class="Table">
+            <tr *ngFor="let colour of colours"> <p>{{colour}}</p>  </tr>
+        </table>
+        <div>
+      <p>reply</p>
+      <input type="text" id="replyField" #newMessage1  maxlength="140" >
+      <button id="PostButton" (click)="postMessage1(newMessage1.value)"> post </button>
+      </div>
+
+      <h3>planets</h3>
+        <table class="Table">
+            <tr *ngFor="let planet of planets"> {{planet}}  </tr>
+        </table>
+        <div>
+      <p>reply</p>
+      <input type="text" id="replyField" #newMessage2  maxlength="140" >
+      <button id="PostButton" (click)="postMessage2(newMessage2.value)"> post </button>
+      </div>
+
+    </section>
+
+    <footer> 
+        <p>Footer </p>
+        <p>is working</p>
+    </footer>
+
+  </div>       <!-- ContentBox -->
+

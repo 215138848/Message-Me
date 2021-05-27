@@ -1,0 +1,103 @@
+
+header {
+
+	position: fixed;
+	height: 120px;
+	width: 57.2%;
+	padding: 1% 1% 1% 1%;
+
+	background: rgb(9, 241, 222);
+	border-radius: 5px;
+}
+
+.ContentBox{
+	height: fit-content;
+	display:flex;
+	flex-flow: row wrap;
+} 
+
+main, section, footer {
+	background: lightgray; 
+	border-radius: 7px; 
+	margin: 5px; 
+	width: (57.2%-45px);
+	padding: 45px;
+}
+
+main {
+  padding-top: 150px;
+  height: 180px;
+  order: 1;
+  flex: 0 1 100%; 
+	
+}
+
+section {
+  
+   order: 2;
+   flex: 0 1 100%;
+	
+}
+
+footer {
+
+  height: 40px;
+  order: 3;
+  flex: 0 1 100%;
+	
+}
+
+.main-input{
+
+	font-size: 14px;
+	font-weight: bold;
+	
+}
+
+.name{
+    display: flex;
+	flex-direction: column;
+}
+
+.message{
+    display: flex;
+	flex-direction: column;
+}
+
+#PostButton{
+	width: 80px;
+	height: 40px;
+	padding: 5px; 
+	font-size: 16px;
+
+}
+
+#messageField{
+	border: 2px solid;
+	padding: 20px; 
+	width: 500px;
+	height: 80px;
+	resize: none;
+	overflow: auto;
+}
+
+#replyField{
+	border: 2px solid;
+	padding: 20px; 
+	width: 300px;
+	height: 40px;
+	resize: none;
+	overflow: auto;
+}
+
+#messageTable{
+	width: 500px;
+	overflow: auto;
+
+}
+
+.table{
+	width: 500px;
+	overflow: auto;
+
+}

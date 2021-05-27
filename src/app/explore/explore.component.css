@@ -1,0 +1,56 @@
+
+
+.ContentBox{
+	height: fit-content;
+	display:flex;
+	flex-flow: row wrap;
+} 
+
+main, section, footer {
+	 background: lightgray; 
+	 border-radius: 7px; 
+	 margin: 5px; 
+	 width: (57.2%-45px);
+	 padding: 45px;
+}
+
+main {
+  padding-top: 20px;
+  height: 50px;
+  order: 1;
+  flex: 0 1 100%; 
+	
+}
+
+section {
+  
+   order: 2;
+   flex: 0 1 100%;
+	
+}
+
+footer {
+
+  height: 40px;
+  order: 3;
+  flex: 0 1 100%;
+	
+}
+
+#PostButton{
+	width: 80px;
+	height: 40px;
+	padding: 5px; 
+	font-size: 16px;
+
+}
+
+#replyField{
+	border: 2px solid;
+	padding: 20px; 
+	width: 300px;
+	height: 40px;
+	resize: none;
+	overflow: auto;
+}
+
